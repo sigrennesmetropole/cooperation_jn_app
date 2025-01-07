@@ -1,6 +1,11 @@
 import type { LineNumber, SelectedTrambusLine } from '@/model/lines.model'
 import { Stroke, Style } from 'ol/style'
-import { getTrambusLineNumber, lineColorsOl, lineDimmedColors } from './common'
+import {
+  getTrambusLineNumber,
+  getTrambusTraceType,
+  lineColorsOl,
+  lineDimmedColors,
+} from './common'
 import type { FeatureLike } from 'ol/Feature'
 import type { TravelTimeModel } from '@/model/travel-time.model'
 import { useHomeViewsStore } from '@/stores/views'
@@ -9,20 +14,26 @@ export type LineState = 'selected' | 'normal' | 'unselected' | 'hidden'
 
 export function trambusLineStyle(
   lineNumber: LineNumber,
-  lineState: LineState
+  lineState: LineState,
+  traceType: string
 ): Style[] {
   const lineStyles = []
   const basicLineStyle = new Style({
     stroke: new Stroke({
       color: lineColorsOl[lineNumber],
       width: 4,
+      lineDash: traceType === 'variante' ? [0, 30, 0, 0] : [],
+      lineCap: 'round',
     }),
     zIndex: 1,
   })
+
   const unselectedLineStyle = new Style({
     stroke: new Stroke({
       color: lineDimmedColors[lineNumber],
       width: 3,
+      lineDash: traceType === 'variante' ? [0, 30, 0, 0] : [],
+      lineCap: 'round',
     }),
     zIndex: 1,
   })
@@ -60,7 +71,8 @@ export function trambusLineViewStyleFunction(
   } else {
     lineState = displayOtherLine ? 'unselected' : 'hidden'
   }
-  return trambusLineStyle(lineNumber, lineState)
+
+  return trambusLineStyle(lineNumber, lineState, getTrambusTraceType(feature))
 }
 
 export function trambusLineTravelTimesViewStyleFunction(
@@ -77,7 +89,8 @@ export function trambusLineTravelTimesViewStyleFunction(
   } else {
     lineState = 'unselected'
   }
-  return trambusLineStyle(lineNumber, lineState)
+
+  return trambusLineStyle(lineNumber, lineState, getTrambusTraceType(feature))
 }
 
 export function homeViewStyleFunction(feature: FeatureLike): Style[] {
@@ -87,5 +100,6 @@ export function homeViewStyleFunction(feature: FeatureLike): Style[] {
   if (homeViewStore.selectedLineOnHomePage == lineNumber) {
     lineState = 'selected'
   }
-  return trambusLineStyle(lineNumber, lineState)
+
+  return trambusLineStyle(lineNumber, lineState, getTrambusTraceType(feature))
 }

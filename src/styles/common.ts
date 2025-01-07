@@ -13,6 +13,11 @@ export function getTrambusLineNumber(feature: FeatureLike): number {
   const lineNumberString = feature.get('li_code') // e.g. T1
   return Number(lineNumberString.substr(1, 2))
 }
+
+export function getTrambusTraceType(feature: FeatureLike): string {
+  return feature.get('trace_type') // e.g. base, variante
+}
+
 export const lineColorsOl: Record<LineNumber, ol_color.Color> = {
   1: ol_color.fromString(colors['T1-classic']),
   2: ol_color.fromString(colors['T2-classic']),
