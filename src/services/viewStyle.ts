@@ -22,7 +22,11 @@ import {
   isTrambusStopBelongsLineToTravelTime,
   isTrambusStopBelongsToLine,
 } from '@/services/station'
-import { getTrambusLineNumber, parkingStyle } from '@/styles/common'
+import {
+  getTrambusLineNumber,
+  getTrambusTraceType,
+  parkingStyle,
+} from '@/styles/common'
 import { useTraveltimeInteractionStore } from '@/stores/interactionMap'
 import { updateTraveltimeArrow } from '@/services/arrow'
 import type { TravelTimeModel } from '@/model/travel-time.model'
@@ -200,14 +204,17 @@ export async function highlightHoveredLine(rennesApp: RennesApp) {
         homeViewStore.getPreviousSelectedLineOnHomePage()!
     )
   selectedLineFeature?.setStyle(
-    trambusLineStyle(homeViewStore.getSelectedLineOnHomePage()!, 'selected')
-  )
-  if (previousSelectedLineFeature) {
-    previousSelectedLineFeature?.setStyle(
-      trambusLineStyle(
-        homeViewStore.getPreviousSelectedLineOnHomePage()!,
-        'normal'
-      )
+    trambusLineStyle(
+      homeViewStore.getSelectedLineOnHomePage()!,
+      'selected',
+      getTrambusTraceType(selectedLineFeature)
     )
-  }
+  )
+  previousSelectedLineFeature?.setStyle(
+    trambusLineStyle(
+      homeViewStore.getPreviousSelectedLineOnHomePage()!,
+      'normal',
+      getTrambusTraceType(previousSelectedLineFeature)
+    )
+  )
 }

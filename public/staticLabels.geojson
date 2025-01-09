@@ -101,6 +101,22 @@
         "type": "Point",
         "coordinates": [-1.592851806953465, 48.122115523006585]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "trambus", "line": "T3" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.6371067976236668, 48.09393614421211]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "trambus", "line": "T4" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.7153235585014723, 48.068956951820155]
+      }
     }
   ]
 }

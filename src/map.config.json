@@ -167,7 +167,7 @@
     },
     {
       "name": "trambusLines",
-      "url": "https://public.sig.rennesmetropole.fr/geoserver/ows?service=WFS&request=getFeature&typename=app:coopterr_trambus_lignes&outputFormat=application/json&srsName=EPSG:4326",
+      "url": "https://public-test.sig.rennesmetropole.fr/geoserver/ows?service=WFS&request=getFeature&typename=app:coopterr_trambus_lignes&outputFormat=application/json&srsName=EPSG:4326",
       "type": "GeoJSONLayer",
       "style": {
         "name": "trambusLineStyle",
@@ -190,7 +190,7 @@
     },
     {
       "name": "trambusStops",
-      "url": "https://public.sig.rennesmetropole.fr/geoserver/ows?service=WFS&request=getFeature&typename=app:coopterr_trambus_arrets&outputFormat=application/json&srsName=EPSG:4326",
+      "url": "https://public-test.sig.rennesmetropole.fr/geoserver/ows?service=WFS&request=getFeature&typename=app:coopterr_trambus_arrets&outputFormat=application/json&srsName=EPSG:4326",
       "type": "GeoJSONLayer",
       "style": {
         "name": "trambusStopStyle",
@@ -225,7 +225,7 @@
     },
     {
       "name": "_trambusStopsOutline",
-      "url": "https://public.sig.rennesmetropole.fr/geoserver/ows?service=WFS&request=getFeature&typename=app:coopterr_trambus_arrets&outputFormat=application/json&srsName=EPSG:4326",
+      "url": "https://public-test.sig.rennesmetropole.fr/geoserver/ows?service=WFS&request=getFeature&typename=app:coopterr_trambus_arrets&outputFormat=application/json&srsName=EPSG:4326",
       "type": "GeoJSONLayer",
       "style": {
         "name": "trambusStopOutlineStyle",
@@ -270,7 +270,7 @@
     },
     {
       "name": "appTrambusLines",
-      "url": "https://public.sig.rennesmetropole.fr/geoserver/ows?service=WFS&request=getFeature&typename=app:coopterr_trambus_lignes&outputFormat=application/json&srsName=EPSG:4326",
+      "url": "https://public-test.sig.rennesmetropole.fr/geoserver/ows?service=WFS&request=getFeature&typename=app:coopterr_trambus_lignes&outputFormat=application/json&srsName=EPSG:4326",
       "type": "GeoJSONLayer",
       "activeOnStartup": true,
       "style": {
