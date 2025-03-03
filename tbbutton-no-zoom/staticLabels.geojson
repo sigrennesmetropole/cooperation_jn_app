@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "name": "staticLabels",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "layerName": "metro", "line": "a" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.633016548197666, 48.081906031147078]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "metro", "line": "b" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.617434411670337, 48.133185271017766]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c1" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.618703803241133, 48.135021108012324]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c2" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.66961275446095, 48.153990122436383]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c3" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.667380504733704, 48.139549214509053]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c4" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.694407859050045, 48.137058184249746]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c5" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.657945503148602, 48.139931600872245]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c6" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.729072656791221, 48.069315359097537]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c7" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.74191348593508, 48.025806612309403]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bike", "line": "bike" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.579566552626008, 48.154191988654198]
+      }
+    }
+  ]
+}

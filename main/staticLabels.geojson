@@ -1,0 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "name": "staticLabels",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "layerName": "metro", "line": "a" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.633016548197666, 48.081906031147078]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "metro", "line": "b" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.615370017233238, 48.132048166041074]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c1" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.621454901792769, 48.136767140114962]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c2" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.66961275446095, 48.153990122436383]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c3" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.667380504733704, 48.139549214509053]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c4" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.697375410174867, 48.1369409560698]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c5" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.657945503148602, 48.139931600872245]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c6" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.729072656791221, 48.069315359097537]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bus", "line": "c7" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.74191348593508, 48.025806612309403]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "bike", "line": "bike" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.579566552626008, 48.154191988654198]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "trambus", "line": "T1" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.704, 48.125]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "trambus", "line": "T2" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.592851806953465, 48.122115523006585]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "trambus", "line": "T3" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.597441746937447, 48.082724353302069]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "layerName": "trambus", "line": "T4" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.712, 48.076]
+      }
+    }
+  ]
+}
